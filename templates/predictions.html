@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Namasthe</title>
+</head>
+<body>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.Num_of_overs.label}} {{form.Num_of_overs}}
+        {{form.Runs.label}} {{form.Runs}}
+        {{form.Wickets.label}} {{form.Wickets}}
+        {{form.Batting_Team.label}} {{form.Batting_Team}}
+        {{form.Bowling_Team.label}} {{form.Bowling_Team}}
+        {{form.Submit}}
+    </form>
+    {% if predict %}
+        <p>The Prediction of total score is {{predict}}</p>
+    {% endif %}
+</body>
+</html>
